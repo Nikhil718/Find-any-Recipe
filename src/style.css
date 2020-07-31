@@ -7,7 +7,7 @@
 
 html{
     box-sizing: border-box;
-    font-size: 63%;
+    font-size: 65%;
 }
 @media only screen and (max-width: 68.75em){
     html {font-size: 50%;
@@ -18,8 +18,8 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    color: #655a65;
-    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    color: #353232;
+    background-image: linear-gradient(to right bottom, #FAACA8, #DDD6FC);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: calc(100vh - 2 * 4vw);
@@ -42,11 +42,11 @@ body{
         border-radius: 0; } }
 
 .btn, .btn-small, .btn-small:link, .btn-small:visited {
-            background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+            background-image: linear-gradient(to right bottom,  #FAACA8, #DDD6FC);
             border-radius: 20rem;
             border: none;
             text-transform: uppercase;
-            color: #fff;
+            color: rgb(73, 70, 70);
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -70,7 +70,7 @@ body{
 
 
      .btn-inline {
-                        color: #F59A83;
+                        color: #817a78;
                         font-size: 1.2rem;
                         border: none;
                         background-color: #F9F5F3;
@@ -133,7 +133,8 @@ body{
         justify-content: space-between; }
         .header__logo {
           margin-left: 4rem;
-          height: 6rem;
+          height: 8rem;
+          width: 10rem;
           display: block; }
         
           .search {
