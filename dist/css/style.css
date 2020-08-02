@@ -23,6 +23,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     min-height: calc(100vh - 2 * 4vw);
+   
 }
 .container {
     max-width: 120rem;
@@ -121,9 +122,35 @@ body{
 .link:visited {
   color: #968B87; }
 
+  
   .loader {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+    border: 3px solid #ddd;
+    border-top: 3px solid #42a5f5;
+    border-radius: 50%;
     margin: 5rem auto;
-    text-align: center; }
+    text-align: center;
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+  
+  @-webkit-keyframes spin {
+    to {
+      border-top-color: #ec407a;
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    to {
+      border-top-color: #ec407a;
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
 
     .header {
         grid-area: head;
