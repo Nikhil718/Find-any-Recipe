@@ -226,7 +226,9 @@ body{
                         padding: 3rem 0; }
                         .results__list,
                         .likes__list {
-                          list-style: none; }
+                    
+                          list-style: none; 
+                        }
                         .results__link:link, .results__link:visited,
                         .likes__link:link,
                         .likes__link:visited {
@@ -280,6 +282,7 @@ body{
                         .results__author,
                         .likes__author {
                           font-size: 1.1rem;
+                         
                           color: #968B87;
                           text-transform: uppercase;
                           font-weight: 600; }
