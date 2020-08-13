@@ -69,6 +69,7 @@ elements.searchResPages.addEventListener('click' , e => {
 const controlRecipe = async () => {
 
     const id = window.location.hash.replace('#' , '');
+    console.log(id);
     
 
     if (id) {
@@ -95,13 +96,12 @@ const controlRecipe = async () => {
            clearLoader();
            recipeView.renderRecipe(state.recipe);
     
-      } catch (err)
-         {
-          alert('Error!!');
+      } catch (err) {
+        console.log(err);
+        alert('Error processing recipe!');
         }
 
     }
 };
 
-window.addEventListener('hashchange' , controlRecipe);
-window.addEventListener('load' , controlRecipe);
+['hashchange','load'].forEach(event => window.addEventListener(event,controlRecipe));
